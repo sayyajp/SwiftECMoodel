@@ -28,6 +28,8 @@
 		E9D41920220BDD3C00DF1727 /* NavigationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D41911220BDD3C00DF1727 /* NavigationHeaderView.xib */; };
 		E9D41922220BDD6000DF1727 /* TopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D41921220BDD6000DF1727 /* TopViewController.swift */; };
 		E9D41924220BDD7F00DF1727 /* TopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D41923220BDD7F00DF1727 /* TopViewController.xib */; };
+		E9D41926220BF32E00DF1727 /* TopHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9D41925220BF32E00DF1727 /* TopHeaderView.swift */; };
+		E9D41928220BF33C00DF1727 /* TopHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9D41927220BF33C00DF1727 /* TopHeaderView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +68,8 @@
 		E9D41911220BDD3C00DF1727 /* NavigationHeaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NavigationHeaderView.xib; sourceTree = "<group>"; };
 		E9D41921220BDD6000DF1727 /* TopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopViewController.swift; sourceTree = "<group>"; };
 		E9D41923220BDD7F00DF1727 /* TopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopViewController.xib; sourceTree = "<group>"; };
+		E9D41925220BF32E00DF1727 /* TopHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopHeaderView.swift; sourceTree = "<group>"; };
+		E9D41927220BF33C00DF1727 /* TopHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TopHeaderView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +154,7 @@
 			isa = PBXGroup;
 			children = (
 				E9D418FB220BDD3C00DF1727 /* Common */,
+				E9D41925220BF32E00DF1727 /* TopHeaderView.swift */,
 			);
 			path = Sub;
 			sourceTree = "<group>";
@@ -225,6 +230,7 @@
 			isa = PBXGroup;
 			children = (
 				E9D41910220BDD3C00DF1727 /* Common */,
+				E9D41927220BF33C00DF1727 /* TopHeaderView.xib */,
 			);
 			path = Sub;
 			sourceTree = "<group>";
@@ -331,6 +337,7 @@
 				E9D418E0220BDD1B00DF1727 /* Assets.xcassets in Resources */,
 				E9D41924220BDD7F00DF1727 /* TopViewController.xib in Resources */,
 				E9D418DE220BDD1A00DF1727 /* Main.storyboard in Resources */,
+				E9D41928220BF33C00DF1727 /* TopHeaderView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -353,6 +360,7 @@
 				E9D4191D220BDD3C00DF1727 /* BaseNavigationControllerViewController.swift in Sources */,
 				E9D4191B220BDD3C00DF1727 /* BaseViewController.swift in Sources */,
 				E9D41919220BDD3C00DF1727 /* BaseTabBarController.swift in Sources */,
+				E9D41926220BF32E00DF1727 /* TopHeaderView.swift in Sources */,
 				E9D4191C220BDD3C00DF1727 /* BaseTableViewCell.swift in Sources */,
 				E9D41916220BDD3C00DF1727 /* UserDataManager.swift in Sources */,
 				E9D4191E220BDD3C00DF1727 /* BaseTableView.swift in Sources */,
