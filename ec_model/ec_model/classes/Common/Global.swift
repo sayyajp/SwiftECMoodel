@@ -96,6 +96,23 @@ func parsePlist(_ fileName: String) -> [[String: Any]]? {
     }
 }
 
+func setCollectionViewLayout(collectionView: UICollectionView, columnCount: Double, heithRatio: Double) -> Double {
+    let flowLayout = UICollectionViewFlowLayout()
+    let margin: CGFloat = 0.0
+    var cellWidth = 0.0
+    if let window = UIApplication.shared.windows.first {
+        cellWidth = Double(window.frame.width) / columnCount
+    }
+    let cellHeight = cellWidth * heithRatio
+    flowLayout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+    flowLayout.scrollDirection = .horizontal
+    flowLayout.minimumInteritemSpacing = margin
+    flowLayout.minimumLineSpacing = margin
+    flowLayout.sectionInset = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)
+    collectionView.collectionViewLayout = flowLayout
+    return cellHeight
+}
+
 func randomString(length: Int) -> String {
     let letters : NSString = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
     let len = UInt32(letters.length)

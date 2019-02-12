@@ -12,6 +12,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TopViewController" customModule="ec_model" customModuleProvider="target">
             <connections>
+                <outlet property="mainCollectionView" destination="fzO-No-aVk" id="wN8-Me-GIe"/>
+                <outlet property="scrollMenuView" destination="pJm-L9-lzo" id="0U4-f4-AuL"/>
                 <outlet property="view" destination="iN0-l3-epB" id="IPF-27-g9t"/>
             </connections>
         </placeholder>
@@ -27,14 +29,45 @@
                         <constraint firstAttribute="height" constant="48" id="GWH-si-M89"/>
                     </constraints>
                 </view>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="pJm-L9-lzo" customClass="ScrollMenuView" customModule="ec_model" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="68" width="375" height="40"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="sQf-Mx-RRm"/>
+                    </constraints>
+                    <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="3mB-cs-wKh">
+                        <size key="itemSize" width="50" height="40"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
+                <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="none" translatesAutoresizingMaskIntoConstraints="NO" id="fzO-No-aVk" customClass="MainCollectionView" customModule="ec_model" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="108" width="375" height="559"/>
+                    <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="lJ8-Bb-eKk">
+                        <size key="itemSize" width="50" height="50"/>
+                        <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                        <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                        <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    </collectionViewFlowLayout>
+                </collectionView>
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="pJm-L9-lzo" secondAttribute="trailing" id="0Hg-6P-LXy"/>
+                <constraint firstItem="fzO-No-aVk" firstAttribute="top" secondItem="pJm-L9-lzo" secondAttribute="bottom" id="F1W-fU-aiF"/>
+                <constraint firstItem="pJm-L9-lzo" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="H3O-yg-mGN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="fzO-No-aVk" secondAttribute="trailing" id="KW0-PW-BQ8"/>
                 <constraint firstItem="lq8-cr-MML" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="VMc-1z-x6E"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="fzO-No-aVk" secondAttribute="bottom" id="WK2-f1-ct1"/>
+                <constraint firstItem="pJm-L9-lzo" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="48" id="Yw0-43-jKn"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="lq8-cr-MML" secondAttribute="trailing" id="jOa-6I-dMy"/>
+                <constraint firstItem="fzO-No-aVk" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="oZZ-A7-Pku"/>
                 <constraint firstItem="lq8-cr-MML" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="q3e-1V-wo7"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="55.200000000000003" y="48.125937031484263"/>
         </view>
     </objects>
 </document>

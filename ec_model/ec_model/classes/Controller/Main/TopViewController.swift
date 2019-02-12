@@ -10,7 +10,12 @@ import UIKit
 
 // MARK: - Property
 class TopViewController: BaseViewController {
-    
+    @IBOutlet weak var scrollMenuView: ScrollMenuView!
+    @IBOutlet weak var mainCollectionView: MainCollectionView!
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        scrollMenuView.delegate = self
+    }
 }
 
 // MARK: - Life cycle
@@ -19,8 +24,10 @@ extension TopViewController {
 }
 
 // MARK: - Protocol
-extension TopViewController {
-    
+extension TopViewController: ScrollMenuViewDelegate {
+    func touchedButton() {
+        
+    }
 }
 
 // MARK: - method
