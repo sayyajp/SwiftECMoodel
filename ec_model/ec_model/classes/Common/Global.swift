@@ -96,7 +96,7 @@ func parsePlist(_ fileName: String) -> [[String: Any]]? {
     }
 }
 
-func setCollectionViewLayout(collectionView: UICollectionView, columnCount: Double, heithRatio: Double) -> Double {
+func setCollectionViewLayout(collectionView: UICollectionView, columnCount: Double, heithRatio: Double, scrollHorizontal: Bool = false) -> Double {
     let flowLayout = UICollectionViewFlowLayout()
     let margin: CGFloat = 0.0
     var cellWidth = 0.0
@@ -105,7 +105,11 @@ func setCollectionViewLayout(collectionView: UICollectionView, columnCount: Doub
     }
     let cellHeight = cellWidth * heithRatio
     flowLayout.itemSize = CGSize(width: cellWidth, height: cellHeight)
+    if (scrollHorizontal == true) {
     flowLayout.scrollDirection = .horizontal
+    }else {
+        flowLayout.scrollDirection = .vertical
+    }
     flowLayout.minimumInteritemSpacing = margin
     flowLayout.minimumLineSpacing = margin
     flowLayout.sectionInset = UIEdgeInsets(top: margin, left: margin, bottom: margin, right: margin)

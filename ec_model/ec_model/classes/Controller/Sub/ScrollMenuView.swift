@@ -9,7 +9,7 @@
 import UIKit
 
 protocol  ScrollMenuViewDelegate: NSObjectProtocol{
-    func touchedButton()
+    func touchedButton(buttonTitle: String?)
 }
 
 
@@ -29,9 +29,8 @@ class ScrollMenuView: BaseView {
 extension ScrollMenuView {
     override func awakeFromNib() {
         super.awakeFromNib()
-        
         collectionView.dataSource = self
-        _ = setCollectionViewLayout(collectionView: collectionView, columnCount: 4 , heithRatio: 0.5)
+        _ = setCollectionViewLayout(collectionView: collectionView, columnCount: 4 , heithRatio: 0.5, scrollHorizontal: true)
         loadCollectionViewCellFromXib(collectionView: collectionView, cellName: "ScrollMenuViewCell")
     }
 }
@@ -52,9 +51,9 @@ extension ScrollMenuView: UICollectionViewDataSource {
     }
 }
 
-extension ScrollMenuView: ScrollMenuViewCellDelegate {
-    func touchedButton() {
-        delegate?.touchedButton()
+extension ScrollMenuView: ScrollMenuViewCellDelegate, UICollectionViewDelegate {
+    func touchedButton(buttonTitle: String?) {
+        delegate?.touchedButton(buttonTitle: buttonTitle)
     }
 }
 
@@ -62,3 +61,6 @@ extension ScrollMenuView: ScrollMenuViewCellDelegate {
 extension ScrollMenuView {
     
 }
+
+
+

@@ -25,6 +25,7 @@ extension MainCollectionView {
     override func awakeFromNib() {
         super.awakeFromNib()
         collectionView.dataSource = self
+        _ = setCollectionViewLayout(collectionView: collectionView, columnCount: 2.0, heithRatio: 1.0)
         loadCollectionViewCellFromXib(collectionView: collectionView, cellName: "MainCollectionViewCell")
     }
 }
@@ -39,7 +40,6 @@ extension MainCollectionView: UICollectionViewDataSource {
         let cell: UICollectionViewCell = collectionView.dequeueReusableCell(withReuseIdentifier: "MainCollectionViewCell", for: indexPath)
         return cell
     }
-    
     
 }
 

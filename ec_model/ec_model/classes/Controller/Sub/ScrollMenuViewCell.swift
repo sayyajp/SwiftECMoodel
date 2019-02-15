@@ -9,14 +9,15 @@
 import UIKit
 
 protocol ScrollMenuViewCellDelegate: NSObjectProtocol {
-    func touchedButton()
+    func touchedButton(buttonTitle: String?)
 }
 
 class ScrollMenuViewCell: UICollectionViewCell {
     @IBOutlet weak var button: UIButton!
     var delegate: ScrollMenuViewCellDelegate?
+    var buttonTitle: String?
     @IBAction func touchedButton(_ sender: UIButton) {
-        delegate?.touchedButton()
+        delegate?.touchedButton(buttonTitle: buttonTitle)
     }
 }
 
@@ -33,6 +34,7 @@ extension ScrollMenuViewCell {
 // MARK: - method
 extension ScrollMenuViewCell {
     func updateCell(name: String) {
+        buttonTitle = name
         self.button.setTitle(name, for: UIControl.State.normal)
     }
 }

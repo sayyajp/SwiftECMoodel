@@ -25,9 +25,10 @@ extension TopViewController {
 
 // MARK: - Protocol
 extension TopViewController: ScrollMenuViewDelegate {
-    func touchedButton() {
-        
+    func touchedButton(buttonTitle: String?) {
+        self.title = buttonTitle
     }
+
 }
 
 // MARK: - method

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E90905E52212AE270062BFDA /* main.png in Resources */ = {isa = PBXBuildFile; fileRef = E90905E42212AE270062BFDA /* main.png */; };
 		E9991B4C2211D4C5007316EA /* MainCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9991B4B2211D4C5007316EA /* MainCollectionView.swift */; };
 		E9991B4E2211D629007316EA /* MainCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E9991B4D2211D629007316EA /* MainCollectionView.xib */; };
 		E9991B502211D74F007316EA /* MainCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9991B4F2211D74F007316EA /* MainCollectionViewCell.swift */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E90905E42212AE270062BFDA /* main.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = main.png; sourceTree = "<group>"; };
 		E9991B4B2211D4C5007316EA /* MainCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionView.swift; sourceTree = "<group>"; };
 		E9991B4D2211D629007316EA /* MainCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainCollectionView.xib; sourceTree = "<group>"; };
 		E9991B4F2211D74F007316EA /* MainCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCollectionViewCell.swift; sourceTree = "<group>"; };
@@ -131,6 +133,7 @@
 				E9D418D8220BDD1A00DF1727 /* AppDelegate.swift */,
 				E9D418DC220BDD1A00DF1727 /* Main.storyboard */,
 				E9D418DF220BDD1B00DF1727 /* Assets.xcassets */,
+				E90905E42212AE270062BFDA /* main.png */,
 				E9D418E1220BDD1B00DF1727 /* LaunchScreen.storyboard */,
 				E9D418E4220BDD1B00DF1727 /* Info.plist */,
 			);
@@ -365,6 +368,7 @@
 				E9D41928220BF33C00DF1727 /* TopHeaderView.xib in Resources */,
 				E9D419A9220D2DC900DF1727 /* ScrollMenuViewCell.xib in Resources */,
 				E9991B4E2211D629007316EA /* MainCollectionView.xib in Resources */,
+				E90905E52212AE270062BFDA /* main.png in Resources */,
 				E9D419A1220C4D8E00DF1727 /* ScrollMenuView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
